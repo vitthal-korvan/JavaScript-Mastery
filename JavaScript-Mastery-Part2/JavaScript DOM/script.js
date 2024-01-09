@@ -191,6 +191,7 @@ elements.forEach(function(element) {
 // const todoList = document.querySelector(".todo-list");
 // todoList.insertAdjacentHTML("beforeend", "<li>Teach Students </li>");
 
+
 // clone nodes: clone nodes means to copy the node and its children to another location in the DOM tree.
 // const ul = document.querySelector(".todo-list");
 // const li = document.createElement("li");
@@ -199,12 +200,15 @@ elements.forEach(function(element) {
 // ul.append(li);
 // ul.prepend(li2);
 
-// static list vs live list:
+
+
+// static list vs live list: 
 
 //querySelectorAll will give us static list.
 //getElememtsByClassName() will give us live list.
 //getElememtsByTagName() will give us live list.
 //getElememtsById() will give us live list.
+
 
 // const ul = document.querySelector(".todo-list");
 // const listItems = ul.getElementsByTagName("li");
@@ -213,8 +217,9 @@ elements.forEach(function(element) {
 // ul.append(sixthLi);
 // console.log(listItems);
 
+
 // how to get the dimension of element
-// height width
+// height width 
 const sectionTodo = document.querySelector(".section-todo");
 const info = sectionTodo.getBoundingClientRect();
 console.log(info);
