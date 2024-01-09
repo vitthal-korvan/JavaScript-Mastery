@@ -54,7 +54,6 @@ const grandparent = document.querySelector(".grandparent");
 //   console.log(e.target);
 // });
 
-
 const todoForm = document.querySelector(".form-todo");
 const todoInput = document.querySelector(".form-todo input[type='text']");
 const todoList = document.querySelector(".todo-list");
