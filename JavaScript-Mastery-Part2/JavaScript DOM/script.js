@@ -50,7 +50,50 @@
 
 //Get and Set attribute:
 //Get attribute -> the getAttribute() method returns the value of a specified attribute.
-console.log(document.getElementById("main-heading").getAttribute("class"));
+//document.getElementById("main-heading").getAttribute("class");
 
 //Set attribute -> the setAttribute() method sets a new value to an attribute.
 //document.getElementById("main-heading").setAttribute("class", "new-class");
+
+
+
+//Get multi elements using get elements by id:
+//Get multiple elements using get elememts by id -> the getElementsById() method returns a collection of all elements with a specified id.
+//const elements = document.getElementById("main-heading");
+//document.getElementById("main-heading").innerHTML = "Hello World";
+
+
+//Get multi elements using get elements by class name:
+//Get multiple elements using get elememts by class name -> the getElementsByClassName() method returns a collection of all elements with a specified class name.
+//const elements = document.getElementsByClassName("example");
+//document.getElementsByClassName("headline")[0].innerHTML = "Hello World";
+
+
+//Get multiple elements using get elememts by tag name:
+//Get multiple elements using get elememts by tag name -> the getElementsByTagName() method returns a collection of all elements with a specified tag name.
+
+//in getElementsByTagName(), getElementsByclass(), getElementsById() method,  we can't use forEach loop for iteration over elements. Becaue, it is not an array. 
+
+/*
+const elements = document.getElementsByTagName("a");
+for (let i = 0; i < elements.length; i++) {
+  elements[i].style.color = "green";
+  elements[i].style.backgroundColor ="#fff";
+  elememts[i].style.padding = "10px";
+  elements[i].style.fontWeight = "bold";
+}
+
+*/
+
+//Get multi elements using get elements by query selector:
+//Get multiple elements using get elememts by query selector -> the querySelector() method returns the first element that matches a "specified CSS selector".
+
+//in query selector we can use forEach loop to iterate over the elements.
+
+const elements = document.querySelectorAll("a");
+for (let i = 0; i < elements.length; i++) {
+  elements[i].style.color = "green";
+  elements[i].style.backgroundColor ="#fff";
+  elememts[i].style.padding = "10px";
+  elements[i].style.fontWeight = "bold";
+}
