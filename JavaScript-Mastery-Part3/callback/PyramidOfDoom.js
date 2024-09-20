@@ -1,32 +1,3 @@
-// understand callback
-
-// function myFunc(callback) {
-//   console.log("Function is doing task 1 ");
-//   callback();
-// }
-
-// myFunc(() => {
-//   console.log("function is doing task 2");
-// });
-
-// function getTwoNumbersAndAdd(number1, number2, onSuccess, onFailure) {
-//   if (typeof number1 === "number" && typeof number2 === "number") {
-//     onSuccess(number1, number2);
-//   } else {
-//     onFailure();
-//   }
-// }
-
-// function addTwoNumbers(num1, num2) {
-//   console.log(num1 + num2);
-// }
-
-// function onFail() {
-//   console.log("Wrong data type");
-//   console.log("please pass numbers only");
-// }
-// getTwoNumbersAndAdd(4, 4, addTwoNumbers, onFail);
-
 const heading1 = document.querySelector(".heading1");
 const heading2 = document.querySelector(".heading2");
 const heading3 = document.querySelector(".heading3");
@@ -37,30 +8,6 @@ const heading7 = document.querySelector(".heading7");
 const heading8 = document.querySelector(".heading8");
 const heading9 = document.querySelector(".heading9");
 const heading10 = document.querySelector(".heading10");
-
-
-//Callback Hell
-// setTimeout(() => {
-//   heading1.textContent = "One";
-//   heading1.style.color = "violet";
-//   setTimeout(() => {
-//     heading2.textContent = "Two";
-//     heading2.style.color = "purple";
-//     setTimeout(() => {
-//       heading3.textContent = "Three";
-//       heading3.style.color = "red";
-//       setTimeout(() => {
-//         heading4.textContent = "Four";
-//         heading4.style.color = "pink";
-//         setTimeout(() => {
-//           heading5.textContent = "Five";
-//           heading5.style.color = "brown";
-//         }, 2000);
-//       }, 1000);
-//     }, 2000);
-//   }, 2000);
-// }, 1000);
-
 
 //Pyramid of Doom
 
