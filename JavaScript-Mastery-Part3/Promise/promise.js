@@ -60,3 +60,23 @@ for (let i = 0; i <= 100; i++) {
 }
 
 console.log("script end!!!!");
+
+/*
+let orderPizza = new Promise(function(resolve, reject) {
+  let pizzaReady = true;  // let's assume we successfully made the pizza
+  
+  if (pizzaReady) {
+    resolve("Pizza is ready!");  // success
+  } else {
+    reject("Pizza could not be made.");  // failure
+  }
+});
+
+orderPizza
+  .then(function(message) {
+    console.log(message);  // this runs if the promise is fulfilled
+  })
+  .catch(function(error) {
+    console.log(error);  // this runs if the promise is rejected
+  });
+*/
