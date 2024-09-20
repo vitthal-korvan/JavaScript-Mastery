@@ -17,3 +17,9 @@ for (let i = 0; i < 100; i++) {
 }
 
 console.log("script end");
+
+
+// const time = ()=>{
+//   console.log('Hello!');
+// }
+// setTimeout(time,1000)
