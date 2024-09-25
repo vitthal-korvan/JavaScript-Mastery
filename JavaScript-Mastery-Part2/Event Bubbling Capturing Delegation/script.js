@@ -1,6 +1,7 @@
-// const grandparent = document.querySelector(".grandparent");
-// const parent = document.querySelector(".parent");
-// const child = document.querySelector(".child");
+const grandparent = document.querySelector(".grandparent");
+const parent = document.querySelector(".parent");
+const child = document.querySelector(".child");
+
 
 //Event Bubbling -> Event propagation
 // child.addEventListener("click", () => {
@@ -47,6 +48,6 @@
 // );
 
 // event delegation
-// grandparent.addEventListener("click", (e) => {
-//   console.log(e.target);
-// });
+child.addEventListener("click", (e) => {
+  console.log(e.target.textContent);
+});

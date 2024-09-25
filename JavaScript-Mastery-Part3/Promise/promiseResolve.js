@@ -17,7 +17,9 @@
 
 function myPromise() {
   return new Promise((resolve, reject) => {
-    resolve("foo");
+    const variable = true
+    if(!variable)resolve("foo");
+    else reject('no foo')
   });
 }
 
@@ -35,4 +37,7 @@ myPromise()
   })
   .then((value) => {
     console.log(value);
-  });
+  })
+  .catch(value=>{
+    console.log(value);
+  })
