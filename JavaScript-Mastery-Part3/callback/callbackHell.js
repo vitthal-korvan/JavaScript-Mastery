@@ -1,28 +1,28 @@
-const one = document.querySelector(".one");
-const two = document.querySelector(".two");
-const three = document.querySelector(".three");
-const four = document.querySelector(".four");
-const five = document.querySelector(".five");
-const six = document.querySelector(".six");
-const seven = document.querySelector(".seven");
-const eight = document.querySelector(".eight");
+const heading1 = document.querySelector(".heading1");
+const heading2 = document.querySelector(".heading2");
+const heading3 = document.querySelector(".heading3");
+const heading4 = document.querySelector(".heading4");
+const heading5 = document.querySelector(".heading5");
+const heading6 = document.querySelector(".heading6");
+const heading7 = document.querySelector(".heading7");
+const heading8 = document.querySelector(".heading8");
 
 setTimeout(() => {
-  one.style.color = "red";
+  heading1.style.color = "red";
   setTimeout(() => {
-    two.style.color = "orange";
+    heading2.style.color = "orange";
     setTimeout(() => {
-      three.style.color = "pink";
+      heading3.style.color = "pink";
       setTimeout(() => {
-        four.style.color = "brown";
+        heading4.style.color = "brown";
         setTimeout(() => {
-          five.style.color = "green";
+          heading5.style.color = "green";
           setTimeout(() => {
-            six.style.color = "yellow";
+            heading6.style.color = "yellow";
             setTimeout(() => {
-              seven.style.color = "gray";
+              heading7.style.color = "gray";
               setTimeout(() => {
-                eight.style.color = "purple";
+                heading8.style.color = "purple";
               }, 2000);
             }, 1000);
           }, 3000);

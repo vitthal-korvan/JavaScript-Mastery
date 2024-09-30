@@ -4,7 +4,7 @@
 //   .then((data) => console.log(data));
 
 //syntax:
-fetch("https://jsonplaceholder.typicode.com/posts")
+fetch("https://jsonplaceholder.typicode.com/postss")
   .then((response) => {
     if (response.status >= 200 && response.status < 300) {
       return response
@@ -15,7 +15,9 @@ fetch("https://jsonplaceholder.typicode.com/posts")
           
         });
     } else {
-      console.log(response.status);
+      throw new Error(response.status);
+      // console.log(response.status);
+      
     }
   })
 
