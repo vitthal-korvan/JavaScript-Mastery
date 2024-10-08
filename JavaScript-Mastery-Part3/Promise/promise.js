@@ -15,61 +15,59 @@
 // If the promise is rejected, the rejection handler is called with the rejection reason.
 
 /* ------- produce --------*/
-// console.log("script start");
+console.log("script start");
 
-// setTimeout(() => {
-//   console.log("hello from setTimeout");
-// }, 0);
+setTimeout(() => {
+  console.log("hello from setTimeout");
+}, 0);
 
-// const bucket = ["coffee", "chips", "salt", "rice"];
+const bucket = ["coffee", "chips", "salt", "rice"];
 
-// const friedRicePromise = new Promise((resolve, reject) => {
-//   if (
-//     bucket.includes("vegetables") &&
-//     bucket.includes("salt") &&
-//     bucket.includes("rice")
-//   ) {
-//     resolve({ value: "friedrice" });
-//   } else {
-//     reject("could not do it");
-//   }
-// });
-
-/* -------  Consume --------*/
-
-//how to consume
-
-// friedRicePromise
-//   .then(
-//     // jab promise resolve hoga
-//     (resolve) => {
-//       console.log("lets eat ", resolve);
-//     }
-//   )
-//   .catch((error) => {
-//     console.log(error);
-//   });
-
-// for (let i = 0; i <= 100; i++) {
-//   console.log(Math.floor(Math.random(), i));
-// }
-
-// console.log("script end!!!!");
-
-let orderPizza = new Promise(function (resolve, reject) {
-  let pizzaReady = true; // let's assume we successfully made the pizza
-
-  if (pizzaReady) {
-    resolve("Pizza is ready!"); // success
+const friedRicePromise = new Promise((resolve, reject) => {
+  if (
+    bucket.includes("vegetables") &&
+    bucket.includes("salt") &&
+    bucket.includes("rice")
+  ) {
+    resolve({ value: "friedrice" });
   } else {
-    reject("Pizza could not be made."); // failure
+    reject("could not do it");
   }
 });
 
-orderPizza
-  .then(function (message) {
-    console.log(message); // this runs if the promise is fulfilled
-  })
-  .catch(function (error) {
-    console.log(error); // this runs if the promise is rejected
+/* -------  Consume --------*/
+
+friedRicePromise
+  .then(
+    // jab promise resolve hoga
+    (resolve) => {
+      console.log("lets eat ", resolve);
+    }
+  )
+  .catch((error) => {
+    console.log(error);
   });
+
+for (let i = 0; i <= 100; i++) {
+  console.log(Math.floor(Math.random(), i));
+}
+
+console.log("script end!!!!");
+
+// let orderPizza = new Promise(function (resolve, reject) {
+//   let pizzaReady = true; // let's assume we successfully made the pizza
+
+//   if (pizzaReady) {
+//     resolve("Pizza is ready!"); // success
+//   } else {
+//     reject("Pizza could not be made."); // failure
+//   }
+// });
+
+// orderPizza
+//   .then(function (message) {
+//     console.log(message); // this runs if the promise is fulfilled
+//   })
+//   .catch(function (error) {
+//     console.log(error); // this runs if the promise is rejected
+//   });

@@ -17,7 +17,7 @@ function changeText(element, text, color, time) {
         element.style.color = color;
         resolve();
       } else {
-        reject("element not found");
+        reject({elem:"not found"});
       }
     }, time);
   });
@@ -25,10 +25,10 @@ function changeText(element, text, color, time) {
 
 changeText(heading1, "one", "red", 1000)
   .then(() => changeText(heading2, "two", "purple", 1000))
-  //.then(()=>{
+  // .then(()=>{
   //  return changeText(heading2, "two", "purple", 1000)
-  //})
-  .then(() => changeText(heading3, "three", "green", 1000))
+  // })
+  .then(() => changeText(heading31, "three", "green", 1000))
   .then(() => changeText(heading4, "four", "orange", 1000))
   .then(() => changeText(heading5, "five", "orange", 1000))
   .then(() => changeText(heading6, "six", "orange", 1000))
@@ -38,4 +38,4 @@ changeText(heading1, "one", "red", 1000)
   .then(() => changeText(heading10, "ten", "orange", 1000))
   .catch((error) => {
     alert(error);
-  });
+  }); 
